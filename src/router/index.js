@@ -20,7 +20,7 @@ const routes = [
     children: [
       {
         path: '/',
-        component: () => import('../views/Camp.vue')
+        component: () => import('../views/Camp/index.vue')
       },
       {
         path: '/inout',

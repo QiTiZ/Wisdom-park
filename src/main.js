@@ -13,9 +13,13 @@ import 'element-ui/lib/theme-chalk/index.css'
 // 日期格式化函数
 import dayjs from 'dayjs'
 
+// 导入echarts
+import * as echarts from 'echarts'
+
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
+Vue.prototype.$echarts = echarts
 
 Vue.filter('BeijingTime', () => {
   return dayjs().format('YYYY-MM-DD HH:mm:ss')
