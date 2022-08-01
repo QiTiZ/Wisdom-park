@@ -16,6 +16,9 @@ import dayjs from 'dayjs'
 // 导入echarts
 import * as echarts from 'echarts'
 
+// 导入字体
+import '@/assets/font/font_wqpxqo986c/iconfont.css'
+
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)

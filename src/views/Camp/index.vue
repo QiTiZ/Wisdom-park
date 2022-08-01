@@ -32,7 +32,29 @@
     </div>
 
     <div class="Safety">
+      <div class="main">
+        <div class="title">
+          <span class="info">营区安全</span>
+          <i>|</i>
+          <span class="infoEn">Safety</span>
+        </div>
+        <el-divider></el-divider>
 
+        <!--  -->
+        <div>
+          <anquanJianKong></anquanJianKong>
+        </div>
+
+        <!-- 车辆进出统计 -->
+        <div>
+          <sosReport></sosReport>
+        </div>
+
+        <!-- 访客记录 -->
+        <div>
+          <Visitor></Visitor>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -41,6 +63,8 @@
 import personAndCar from './personAndCar.vue'
 import inAndOut from './inAndOut.vue'
 import Visitor from './Visitor.vue'
+import anquanJianKong from './anquanJianKong.vue'
+import sosReport from './sosReport.vue'
 export default {
   name: '',
   data() {
@@ -51,7 +75,9 @@ export default {
   components: {
     personAndCar,
     inAndOut,
-    Visitor
+    Visitor,
+    anquanJianKong,
+    sosReport
   },
   created() {},
   methods: {}
@@ -101,5 +127,20 @@ export default {
   height: 760px;
   background-color: #181818;
   opacity: 0.9;
+  .main {
+    margin: 20px;
+    .title {
+      .info {
+        color: #fff;
+      }
+      i {
+        margin: 0 10px;
+        color: #eeee;
+      }
+      .infoEn {
+        color: #9f9f9f;
+      }
+    }
+  }
 }
 </style>
